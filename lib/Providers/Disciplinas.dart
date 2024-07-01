@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/disciplina.dart';
+import 'package:project/Modelos/Disciplina.dart';
 
 class DisciplinasProvider with ChangeNotifier {
   List<Disciplina> _disciplinas = [];
@@ -16,4 +16,13 @@ class DisciplinasProvider with ChangeNotifier {
     disciplina.notas[trimestre - 1] = nota;
     notifyListeners();
   }
+
+
+
+  void calcularMedia(String nome) {
+    final disciplina = _disciplinas.firstWhere((d) => d.nome == nome);
+    disciplina.media = disciplina.notas.reduce((a, b) => a + b) / disciplina.notas.length;
+    notifyListeners();
+  }
 }
+

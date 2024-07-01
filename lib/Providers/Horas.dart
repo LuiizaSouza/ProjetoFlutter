@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/horas.dart';
+import 'package:project/Modelos/Horas_complementares.dart';
+
 
 class HorasProvider with ChangeNotifier {
   final Map<int, int> _limiteHoras = {1: 155, 2: 40, 3: 40};
@@ -16,7 +17,7 @@ class HorasProvider with ChangeNotifier {
       _horas.add(hora);
       notifyListeners();
     } else {
-      throw Exception('Limite de horas atingido para o grupo ${hora.grupo}');
+      throw Exception('LIMITE DE HORAS ATINGIDO PARA O GRUPO: ${hora.grupo}!');
     }
   }
 }

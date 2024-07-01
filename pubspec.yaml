@@ -1,32 +1,20 @@
-name: flutter
-description: Uma breve descrição do seu aplicativo
-version: 1.0.0
+name: project
+description: Um aplicativo para gerenciar notas e horas complementares.
+version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"  # Versão mínima e máxima do SDK do Flutter
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
-    sdk: flutter  # Dependência básica do Flutter
-
-  # Exemplos de dependências adicionais
-  cupertino_icons: ^1.0.2  # Ícones do iOS para Flutter
-  provider: ^6.0.0  # Gerenciamento de estado para Flutter
-  http: ^0.13.4  # Cliente HTTP para Flutter
-  firebase_core: ^1.12.0  # Core do Firebase para Flutter
-  firebase_auth: ^4.5.0  # Autenticação do Firebase para Flutter
+    sdk: flutter
+  provider: ^6.0.0  # Versão compatível do Provider
 
 dev_dependencies:
   flutter_test:
-    sdk: flutter  # Dependência de teste do Flutter
+    sdk: flutter
 
 flutter:
-  uses-material-design: true  # Usa o design de materiais padrão do Flutter
-  # Configurações adicionais de build, como ícones, splash screen, etc.
-  # icons:
-  #   - image: assets/icons/app_icon.png
-  #     size: 1024x1024
-  #
-  # splash:
-  #   image: assets/images/splash.png
-  #   color: "#FFFFFF"
+  assets:
+    - assets/
+
