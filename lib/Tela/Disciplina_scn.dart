@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/Modelos/Disciplina.dart';
-import 'package:project/Providers/Disciplinas.dart';
+import 'package:project/Providers/Notas.dart';
 import 'package:provider/provider.dart';
 
 
