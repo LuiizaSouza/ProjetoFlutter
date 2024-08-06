@@ -1,6 +1,6 @@
 # projeto_gestao_notas_horas
 
-A new Flutter project.
+Um app para gestão de notas e horas.
 
 ## Getting Started
 
